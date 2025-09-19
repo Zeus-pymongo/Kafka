@@ -1,4 +1,4 @@
-# producer_min.py  — MariaDB → Kafka (작업만 적재)
+# test_producer.py  — MariaDB → Kafka (작업만 적재)
 import json, hashlib
 import pandas as pd
 import pymysql

@@ -1,4 +1,4 @@
-# test_consumer.py  — topic_test → Selenium → MongoDB (minseonjae_cunsumer.py와 동일한 수집 로직)
+# test_consumer.py  — topic_test → Selenium → MongoDB
 import os, json, time
 from kafka import KafkaConsumer
 from pymongo import MongoClient
