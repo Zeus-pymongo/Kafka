@@ -14,7 +14,7 @@ CLIENT_ID = os.getenv("CLIENT_ID") or None
 
 MONGO_URI = "mongodb://kevin:pass123%23@192.168.0.222:27017/"
 DB_NAME = "jongro"
-COLL_NAME = "ll"   # 원하는 컬렉션명으로
+COLL_NAME = "ll"   # 원하는 컬렉션명으로 RESTAURANTS_GENERAL
 
 # ==== 프로듀서 메시지 키 매핑 (test_producer.py가 보내는 키) ====
 MARIADB_COLUMN = 'original_name'
