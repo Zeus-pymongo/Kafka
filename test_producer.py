@@ -33,7 +33,7 @@ def main():
     for r in rows:
         name, addr = r.get(COL_NAME), r.get(COL_ADDR)
         if not name: continue
-        msg = {"type":"task","original_name":name,"address":addr,"source":"mariadb"}
+        msg = {"type":"task","original_name":name,"address":addr,"source":"mariadb"} # 컨슈머 키 매핑 시 중요
         p.send(TOPIC, key=kkey(name), value=msg); sent += 1
     p.flush()
     print(f"✅ 작업 {sent}건 전송 → {TOPIC}")

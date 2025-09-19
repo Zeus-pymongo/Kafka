@@ -8,8 +8,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # ==== 환경 ====
 KAFKA_BOOTSTRAP = '192.168.0.223:9092'
-KAFKA_TOPIC = 'topic_test'
-GROUP_ID = 'topic_group_test'
+KAFKA_TOPIC = 'topic_test' # 카프카에서 토픽 생성한 걸로 변경
+GROUP_ID = 'topic_group_test' ## consumer 실행 시 자동으로 group_id 생성
 CLIENT_ID = os.getenv("CLIENT_ID") or None
 
 MONGO_URI = "mongodb://kevin:pass123%23@192.168.0.222:27017/"
